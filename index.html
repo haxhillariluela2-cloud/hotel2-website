@@ -8,10 +8,12 @@
 
 <style>
 body{font-family:Arial;background:#111;color:white;}
-.hero{height:100vh;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') center/cover;display:flex;align-items:center;justify-content:center;text-align:center;}
+.hero{height:100vh;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://images.unsplash.com/photo-1513104890138-7c749659a591') center/cover;display:flex;align-items:center;justify-content:center;text-align:center;}
 .hero h1{font-size:60px;color:#ffb703;}
 .section{padding:60px 0;}
-.menu-section h3{color:#ffb703;margin-top:30px;}
+.card{background:#1a1a1a;border:none;color:white;transition:0.3s;border-radius:15px;overflow:hidden;}
+.card:hover{transform:scale(1.05);} 
+.card img{height:220px;object-fit:cover;}
 .btn-custom{background:#ffb703;border:none;color:black;font-weight:bold;}
 
 .chatbot{position:fixed;bottom:20px;right:20px;width:350px;background:#1a1a1a;border-radius:10px;overflow:hidden;}
@@ -33,47 +35,79 @@ body{font-family:Arial;background:#111;color:white;}
  </div>
 </div>
 
-<!-- MENU FULL -->
-<div id="menu" class="container section menu-section">
- <h2 class="text-center">MENU</h2>
+<!-- MENU WITH PROFESSIONAL PHOTOS -->
+<div id="menu" class="container section">
+ <h2 class="text-center mb-5">Menu Profesionale</h2>
+ <div class="row">
 
- <h3>🍕 PIZZA</h3>
- <p>Margherita – 500 ALL<br>Marinara – 450 ALL<br>Napoli – 600 ALL<br>Prosciutto – 700 ALL<br>Salami – 700 ALL<br>Capricciosa – 800 ALL<br>Diavola – 750 ALL<br>4 Djathra – 800 ALL<br>Bulevard – 900 ALL<br>Vegetariana – 700 ALL<br>Tonno e Cipolla – 750 ALL</p>
+  <div class="col-md-4">
+   <div class="card">
+    <img src="https://images.unsplash.com/photo-1548365328-8b849e0b7d2c">
+    <div class="card-body">
+     <h5>Pizza Margherita</h5>
+     <p>500 ALL</p>
+    </div>
+   </div>
+  </div>
 
- <h3>🍝 MAKARONA</h3>
- <p>Spaghetti Napoli – 600 ALL<br>Spaghetti Bolognese – 700 ALL<br>Penne Arrabiata – 650 ALL<br>Tagliatelle Carbonara – 750 ALL<br>Pasta me fruta deti – 900 ALL</p>
+  <div class="col-md-4">
+   <div class="card">
+    <img src="https://images.unsplash.com/photo-1601924928580-5b5e9d9f9b2f">
+    <div class="card-body">
+     <h5>Pizza Pepperoni</h5>
+     <p>700 ALL</p>
+    </div>
+   </div>
+  </div>
 
- <h3>🍚 RIZOTO</h3>
- <p>Rizoto me kërpudha – 700 ALL<br>Rizoto me pulë – 800 ALL<br>Rizoto me fruta deti – 950 ALL</p>
+  <div class="col-md-4">
+   <div class="card">
+    <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141">
+    <div class="card-body">
+     <h5>4 Djathra</h5>
+     <p>800 ALL</p>
+    </div>
+   </div>
+  </div>
 
- <h3>🥗 SALLATA</h3>
- <p>Sallatë fshati – 500 ALL<br>Sallatë Caesar – 700 ALL<br>Sallatë rukola – 650 ALL<br>Sallatë ton – 650 ALL</p>
+  <div class="col-md-4 mt-4">
+   <div class="card">
+    <img src="https://images.unsplash.com/photo-1521389508051-d7ffb5dc8c0c">
+    <div class="card-body">
+     <h5>Pasta Carbonara</h5>
+     <p>750 ALL</p>
+    </div>
+   </div>
+  </div>
 
- <h3>🍟 SHOQËRUESE</h3>
- <p>Patate të skuqura – 300 ALL<br>Patate wedges – 350 ALL<br>Bruschetta – 400 ALL</p>
+  <div class="col-md-4 mt-4">
+   <div class="card">
+    <img src="https://images.unsplash.com/photo-1604908177522-4024d7a6c6c3">
+    <div class="card-body">
+     <h5>Sallatë Caesar</h5>
+     <p>700 ALL</p>
+    </div>
+   </div>
+  </div>
 
- <h3>🍰 ËMBËLSIRA</h3>
- <p>Tiramisu – 400 ALL<br>Panna Cotta – 400 ALL<br>Cheesecake – 450 ALL<br>Akullore – 300 ALL</p>
+  <div class="col-md-4 mt-4">
+   <div class="card">
+    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb">
+    <div class="card-body">
+     <h5>Tiramisu</h5>
+     <p>400 ALL</p>
+    </div>
+   </div>
+  </div>
 
- <h3>🥤 PIJE</h3>
- <p>Ujë – 100 ALL<br>Coca-Cola/Fanta/Sprite – 200 ALL<br>Lëngje natyrale – 300 ALL<br>Ice Tea – 250 ALL<br>Birrë – 300-400 ALL<br>Verë – 300 / 1500 ALL<br>Kafe – 100-200 ALL<br>Çaj – 150 ALL</p>
+ </div>
 </div>
 
-<!-- BOOKING FORM -->
-<div class="container section text-center">
- <h2>Rezervo Tavolinë</h2>
- <input type="text" id="name" placeholder="Emri" class="form-control mb-2">
- <input type="number" id="people" placeholder="Persona" class="form-control mb-2">
- <input type="date" id="date" class="form-control mb-2">
- <button class="btn btn-custom" onclick="book()">Rezervo</button>
- <p id="result"></p>
-</div>
-
-<!-- CHATBOT SUPER -->
+<!-- CHATBOT -->
 <div class="chatbot">
- <div class="chat-header">Chat Inteligjent 🤖</div>
+ <div class="chat-header">Asistenti 🍕</div>
  <div class="chat-body" id="chatBody">
-  <div>Bot: Përshëndetje! Pyesni për menu, çmime ose rezervime 😊</div>
+  <div>Bot: Përshëndetje! Mund të shihni menunë ose të bëni rezervim 😊</div>
  </div>
  <div class="chat-input">
   <input type="text" id="userInput">
@@ -82,13 +116,6 @@ body{font-family:Arial;background:#111;color:white;}
 </div>
 
 <script>
-function book(){
- let n=document.getElementById('name').value;
- let p=document.getElementById('people').value;
- let d=document.getElementById('date').value;
- document.getElementById('result').innerText = `Rezervim OK ✔️ ${n}, ${p} persona, ${d}`;
-}
-
 function chat(){
  let input=document.getElementById('userInput').value;
  let chat=document.getElementById('chatBody');
@@ -97,12 +124,11 @@ function chat(){
  let t=input.toLowerCase();
  let res="";
 
- if(t.includes("menu")) res="Menu jonë përfshin pizza, makarona, sallata dhe pije.";
- else if(t.includes("cmim")) res="Çmimet fillojnë nga 100 ALL deri në 2500 ALL.";
- else if(t.includes("rezervim")) res="Mund të rezervoni nga forma ose këtu.";
- else if(t.includes("pershendetje")) res="Përshëndetje! 😊";
- else if(t.includes("mirupafshim")) res="Faleminderit! Mirupafshim 👋";
- else res="Jam këtu për çdo pyetje rreth restorantit 😊";
+ if(t.includes("menu")) res="Shiko menunë me foto në faqe 🍕";
+ else if(t.includes("cmim")) res="Çmimet janë të listuara për çdo produkt.";
+ else if(t.includes("pershendetje")) res="Përshëndetje 😊";
+ else if(t.includes("mirupafshim")) res="Mirupafshim 👋";
+ else res="Mund të të ndihmoj me menu ose rezervime.";
 
  chat.innerHTML+=`<div>Bot: ${res}</div>`;
  document.getElementById('userInput').value="";
@@ -111,3 +137,4 @@ function chat(){
 
 </body>
 </html>
+
